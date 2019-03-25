@@ -1,0 +1,77 @@
+.md ion-nav > .ion-page > .toolbar.statusbar-padding:first-child,
+.md ion-nav > .ion-page > ion-header > .toolbar.statusbar-padding:first-child,
+.md ion-tab > .ion-page > .toolbar.statusbar-padding:first-child,
+.md ion-tab > .ion-page > ion-header > .toolbar.statusbar-padding:first-child,
+.md ion-tabs > .ion-page.tab-subpage > ion-header > .toolbar.statusbar-padding:first-child,
+.md ion-menu > .menu-inner > .toolbar.statusbar-padding:first-child,
+.md ion-menu > .menu-inner > ion-header > .toolbar.statusbar-padding:first-child {
+  padding-top: calc(20px + 4px);
+  padding-left: calc(env(safe-area-inset-left) + 4px);
+  padding-right: calc(env(safe-area-inset-right) + 4px);
+  padding-top: calc(env(safe-area-inset-top) + 4px);
+  min-height: calc(56px + 20px);
+  min-height: calc(56px + env(safe-area-inset-top));
+}
+
+.md ion-nav > .ion-page > ion-content.statusbar-padding:first-child .scroll-content,
+.md ion-nav > .ion-page > ion-header > ion-content.statusbar-padding:first-child .scroll-content,
+.md ion-tab > .ion-page > ion-content.statusbar-padding:first-child .scroll-content,
+.md ion-tab > .ion-page > ion-header > ion-content.statusbar-padding:first-child .scroll-content,
+.md ion-tabs > .ion-page.tab-subpage > ion-header > ion-content.statusbar-padding:first-child .scroll-content,
+.md ion-menu > .menu-inner > ion-content.statusbar-padding:first-child .scroll-content,
+.md ion-menu > .menu-inner > ion-header > ion-content.statusbar-padding:first-child .scroll-content {
+  padding-top: 20px;
+  padding-top: calc(20px + env(safe-area-inset-top)); 
+}
+
+.md ion-nav > .ion-page > ion-content.statusbar-padding:first-child[padding] .scroll-content,
+.md ion-nav > .ion-page > ion-content.statusbar-padding:first-child[padding-top] .scroll-content,
+.md ion-nav > .ion-page > ion-header > ion-content.statusbar-padding:first-child[padding] .scroll-content,
+.md ion-nav > .ion-page > ion-header > ion-content.statusbar-padding:first-child[padding-top] .scroll-content,
+.md ion-tab > .ion-page > ion-content.statusbar-padding:first-child[padding] .scroll-content,
+.md ion-tab > .ion-page > ion-content.statusbar-padding:first-child[padding-top] .scroll-content,
+.md ion-tab > .ion-page > ion-header > ion-content.statusbar-padding:first-child[padding] .scroll-content,
+.md ion-tab > .ion-page > ion-header > ion-content.statusbar-padding:first-child[padding-top] .scroll-content,
+.md ion-tabs > .ion-page.tab-subpage > ion-header > ion-content.statusbar-padding:first-child[padding] .scroll-content,
+.md ion-tabs > .ion-page.tab-subpage > ion-header > ion-content.statusbar-padding:first-child[padding-top] .scroll-content,
+.md ion-menu > .menu-inner > ion-content.statusbar-padding:first-child[padding] .scroll-content,
+.md ion-menu > .menu-inner > ion-content.statusbar-padding:first-child[padding-top] .scroll-content,
+.md ion-menu > .menu-inner > ion-header > ion-content.statusbar-padding:first-child[padding] .scroll-content,
+.md ion-menu > .menu-inner > ion-header > ion-content.statusbar-padding:first-child[padding-top] .scroll-content {
+  padding-top: calc(16px + 20px);
+  padding-top: calc(16px + env(safe-area-inset-top));
+}
+
+@media only screen and (max-width: 767px) {
+  .md .modal-wrapper > .ion-page > ion-header > .toolbar.statusbar-padding:first-child {
+    padding-top: calc(20px + 4px);
+    padding-left: calc(env(safe-area-inset-left) + 4px);
+    padding-right: calc(env(safe-area-inset-right) + 4px);
+    padding-top: calc(env(safe-area-inset-top) + 4px);
+    min-height: calc(56px + 20px);
+    min-height: calc(56px + env(safe-area-inset-top));
+  }
+  .md .modal-wrapper > .ion-page > ion-header > ion-content.statusbar-padding:first-child .scroll-content {
+    padding-top: 20px;
+    padding-top: calc(20px + env(safe-area-inset-top));
+  }
+  .md .modal-wrapper > .ion-page > ion-header > ion-content.statusbar-padding:first-child[padding] .scroll-content,
+  .md .modal-wrapper > .ion-page > ion-header > ion-content.statusbar-padding:first-child[padding-top] .scroll-content {
+    padding-top: calc(16px + 20px);
+    padding-top: calc(16px + env(safe-area-inset-top));
+  }
+}
+
+.md .tabs .tabbar {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.md ion-footer .toolbar:last-child {
+  padding-bottom: calc(constant(safe-area-inset-bottom) + 4px);
+}
+
+.md ion-footer .toolbar:last-child {
+  height: calc(56px + env(safe-area-inset-top));
+  min-height: calc(56px + env(safe-area-inset-top));
+  padding-bottom: calc(env(safe-area-inset-bottom) + 4px);
+}

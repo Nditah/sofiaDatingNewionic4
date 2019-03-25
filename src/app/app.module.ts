@@ -8,9 +8,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AutosizeDirective } from './directives/autosize.directive';
+import { KeybordAttachDirective } from './directives/keybord-attach.directive';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, AutosizeDirective, KeybordAttachDirective],
   entryComponents: [],
   imports: [
     BrowserModule,
